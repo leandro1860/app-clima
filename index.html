@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Clima</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+   <div class="container-fluid">
+     <section class="total-content">
+    <div class="card">
+      <div>
+      <img src="images/clima.jpg" class="card-img-top" alt="...">
+    </div>
+      <div class="card-body">
+        <h5 class="card-title">CLIMA ACTUAL</h5>
+        <p class="card-text">Averigue los datos climáticos de su pais y/o del resto del mundo.</p>
+        <p id="pais">País</p>
+        <p id="ciudad">Ciudad</p>
+        <p id="temperatura">Temperatura</p>
+        <p id="humedad">Humedad</p>
+        <p id="visibilidad">Visibilidad</p>
+      </div>
+      <div>
+        <form class="country-choice">
+          <div>
+            <select class="browser-default custom-select" id="income-country">
+              <option>Elija el País</option>
+              <option value="ar">Argentina</option>
+              <option value="br">Brasil</option>
+              <option value="cl">Chile</option>
+              <option value="uy">Uruguay</option>
+              <option value="us">Estados Unidos</option>
+              <option value="mx">México</option>
+              <option value="es">España</option>
+              <option value="it">Italia</option>
+              <option value="fr">Francia</option>
+              <option value="de">Alemania</option>
+              <option value="nl">Holanda</option>
+              <option value="cn">China</option>
+              <option value="jp">Japón</option>
+            </select>
+          </div>
+          <div class="income-city">
+            <input id="income-city" type="text" class="form-control" placeholder="Escriba la ciudad">
+          </div>
+        </form>
+        <div class="search-button">
+          <button class="btn btn-primary" id="search" onclick="displayDate()">Buscar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
