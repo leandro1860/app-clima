@@ -1,2 +1,2 @@
-# app-clima
-Aplicación Web para averiguar datos del clima actual.
+# weather-app
+Web application to find out about current weather data.
